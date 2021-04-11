@@ -19,8 +19,8 @@
                 <div class="owl-stage-outer">
                     <div class="owl-stage">
                         <% @testimonials.each do |testimonial| %>
-                            <div class="card owl-item" style="width: 18rem;">
-                                <%= image_tag "#{testimonial[:imgsrc]}", class:"card-img-top",  alt: "Card image cap"%>
+                            <div class="card owl-item">
+                                <%= image_tag "#{testimonial[:imgsrc]}", class:"card-img-top",  alt: "picture of Woofmama testimonial"%>
                                 <div class="card-body">
                                     <blockquote class="blockquote mb-0">
                                          <p class="card-text"><%= testimonial[:test].html_safe %></p>
