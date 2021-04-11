@@ -15,6 +15,10 @@
  */
 
  @import "bootstrap/scss/bootstrap";
- @import 'owl.carousel/src/scss/owl.carousel';
- @import 'owl.carousel/src/scss/owl.theme.default';
- @import 'owl.carousel/src/scss/owl.theme.green';
+ @import "owl.carousel/src/scss/owl.carousel";
+ @import "owl.carousel/src/scss/owl.theme.default";
+
+ @import "./colors.scss";
+ @import "./base.scss";
+ @import "./navigation.scss";
+ @import "./owl.scss"; 

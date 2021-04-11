@@ -1,17 +1,23 @@
 <%= javascript_pack_tag 'carousel' %>
-<div class="container">
-    <div>
-    </div>
-    <div class="owl-carousel owl-theme owl-loaded">
-        <div class="owl-stage-outer">
-            <div class="owl-stage">
-                <% @things.each do |thing| %>
-                    <div class="card owl-item">
-                        <div class="card-body">
-                            <%= thing %>
-                        </div>
+<div class="main-body">
+    <div class="container">
+        <div class="row">
+            <h1>WoofMama the #1</h1>
+        </div>
+        <div class="row">
+            <div class="owl-carousel owl-theme owl-loaded circle-bckg">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <% @things.each do |thing| %>
+                            <div class="card owl-item" style="width: 18rem;">
+                                <%= image_tag "#{thing[:imgsrc]}", class:"card-img-top",  alt: "Card image cap"%>
+                                <div class="card-body">
+                                    <p class="card-text"><%= thing[:test] %></p>
+                                </div>
+                            </div>
+                        <% end %>
                     </div>
-                <% end %>
+                </div>
             </div>
         </div>
     </div>

@@ -1,9 +1,28 @@
-$light-purple: #B5A3CF;
-$medium-purple: #6A55A1;
-$medium-blue: #ACDEE6;
-
-$main-font: 'Monserrat', 'sans-serif';
+@import "./colors.scss";
 
 body {
-    font-family: $main-font;
+    background-color: rgba($color: $light-yellow, $alpha: 0.05) !important;
+}
+
+.btn-green {
+    background-color: $medium-green !important;
+    color: white !important;
+    border: 2px solid $medium-green !important;
+    font-weight: 500 !important;
+}
+
+.btn-blue {
+    color: $medium-blue !important;
+    border: 2px solid $medium-blue !important;
+    font-weight: 500 !important;
+    &:hover {
+        background-color: $medium-blue !important;
+        color: white !important;
+        border-color: $medium-blue !important;
+    }
+}
+
+.circle-bckg {
+    background: radial-gradient(775px circle at 50% 50%,#1bdbb9 50%,transparent 0);
+    background-position: 50%;
 }

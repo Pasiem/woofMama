@@ -1,0 +1,13 @@
+@import "./colors.scss";
+
+.wm-nav-logo {
+    max-width: 166px;
+}
+
+.custom-navlink {
+    color: $medium-blue;
+    font-weight: 500;
+    &:hover {
+        color: $dark-blue;
+    }
+}

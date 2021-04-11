@@ -10,12 +10,13 @@ import 'owl.carousel';
 
 $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
+        nav: true,
+        navText: ["<i class='fas fa-chevron-circle-left'></i>","<i class='fas fa-chevron-circle-right'></i>"],
         autoplay: true,
         dots: false,
         autoplayHoverPause: true,
         loop: true,
         margin: 10,
-        nav: true,
         responsive: {
             0:{
                 items:1
@@ -28,14 +29,5 @@ $(document).ready(function(){
             }
         }
     });
-    $('.customNextBtn').click(function() {
-        owl.trigger('next.owl.carousel');
-    })
-    // Go to the previous item
-    $('.customPrevBtn').click(function() {
-        // With optional speed parameter
-        // Parameters has to be in square bracket '[]'
-        owl.trigger('prev.owl.carousel', [300]);
-    })
   });
 
