@@ -1,8 +1,18 @@
 <%= javascript_pack_tag 'carousel' %>
 <div class="main-body">
     <div class="container">
-        <div class="row">
-            <h1>WoofMama the #1</h1>
+        <div class="row top-padding">
+            <div class="col-lg-6">
+                <h1>WoofMama the #1 Doggo App!</h1>
+                    Doggo ipsum h*ck blep ur givin me a spook, thicc. Puggorino mlem tungg fluffer woofer, snoot you are doing me the shock. 
+                    Adorable doggo heckin angery woofer super chub snoot wow such tempt snoot long woofer, long doggo aqua doggo heck blop. 
+                    H*ck you are doing me a frighten borkf floofs very hand that feed shibe, puggo he made many woofs fluffer.
+                    thicc the neighborhood pupper very taste wow. h*ck thicc very good spot. What a nice floof smol many pats clouds shoob 
+                    wow such tempt long woofer, bork doggo wow such tempt pupper.
+            </div>
+            <div class="col-lg-6">
+                <%= image_tag "Group_599.webp" %>
+            </div>
         </div>
         <div class="row">
             <div class="owl-carousel owl-theme owl-loaded circle-bckg">
@@ -12,7 +22,10 @@
                             <div class="card owl-item" style="width: 18rem;">
                                 <%= image_tag "#{thing[:imgsrc]}", class:"card-img-top",  alt: "Card image cap"%>
                                 <div class="card-body">
-                                    <p class="card-text"><%= thing[:test] %></p>
+                                    <blockquote class="blockquote mb-0">
+                                         <p class="card-text"><%= thing[:test].html_safe %></p>
+                                        <footer class="blockquote-footer"><%= thing[:name] %> | <cite title="Source Title">Source Title</cite></footer>
+                                    </blockquote>
                                 </div>
                             </div>
                         <% end %>

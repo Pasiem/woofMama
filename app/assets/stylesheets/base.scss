@@ -1,8 +1,26 @@
-@import "./colors.scss";
+@import "./variables.scss";
 
 body {
     background-color: rgba($color: $light-yellow, $alpha: 0.05) !important;
 }
+
+img {
+     max-width: 100%;
+ }
+
+ h1 {
+     font-weight: 800;
+     padding-top: 15px;
+     padding-bottom: 15px;
+ }
+
+ .blue-text {
+    color: $medium-blue;
+ }
+
+ .top-padding {
+     padding-top: 40px;
+ }
 
 .btn-green {
     background-color: $medium-green !important;
@@ -23,6 +41,14 @@ body {
 }
 
 .circle-bckg {
-    background: radial-gradient(775px circle at 50% 50%,#1bdbb9 50%,transparent 0);
     background-position: 50%;
+    @include sm {
+        background: radial-gradient(384px circle at 50% 50%,#1bdbb9 50%,transparent 0);
+    }
+    @include md {
+        background: radial-gradient(496px circle at 50% 50%,#1bdbb9 50%,transparent 0);
+    }
+    @include lg {
+        background: radial-gradient(775px circle at 50% 50%,#1bdbb9 50%,transparent 0);
+    }
 }

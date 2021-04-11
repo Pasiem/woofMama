@@ -1,4 +1,4 @@
-@import "./colors.scss";
+@import "./variables.scss";
 
 .wm-nav-logo {
     max-width: 166px;
@@ -10,4 +10,8 @@
     &:hover {
         color: $dark-blue;
     }
+}
+
+.align-right {
+    justify-content: flex-end;
 }

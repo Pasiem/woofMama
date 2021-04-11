@@ -18,14 +18,14 @@ $(document).ready(function(){
         loop: true,
         margin: 10,
         responsive: {
-            0:{
+            576:{
                 items:1
             },
-            600:{
+            768:{
                 items:3
             },
-            1000:{
-                items:5
+            992:{
+                items:4
             }
         }
     });
