@@ -1,0 +1,18 @@
+<%= javascript_pack_tag 'carousel' %>
+<div class="container">
+    <div>
+    </div>
+    <div class="owl-carousel owl-theme owl-loaded">
+        <div class="owl-stage-outer">
+            <div class="owl-stage">
+                <% @things.each do |thing| %>
+                    <div class="card owl-item">
+                        <div class="card-body">
+                            <%= thing %>
+                        </div>
+                    </div>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>
